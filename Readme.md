@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Елена Медуница](https://up.htmlacademy.ru/htmlcss/21/user/626865).
-* Наставник: [Дмитрий Шамрыло](https://up.htmlacademy.ru/htmlcss/21/user/59460).
+* Наставник: [Дмитрий Шамрило](https://up.htmlacademy.ru/htmlcss/21/user/59460).
 
 ---
 
