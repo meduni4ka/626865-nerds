@@ -18,79 +18,93 @@
           <li><a href="#">Контакты</a></li>
         </ul>
         <ul class="user-navigation">
-          <li class="shopping-cart">Корзина</li>
+          <a class="shopping-cart" href="#">Корзина</a>
         </ul>
       </nav>
       <h1>Магазин готовых шаблонов</h1>
     </header>
     <main class="container-catalog">
-      <div class="form">
-        <span>СТОИМОСТЬ:от 0 до 15000</span>
+      <form class="user" method="post" action="https://echo.htmlacademy.ru">
+        <p>СТОИМОСТЬ:</p>
+        <label>
+          <input type="range" name="radio">от 0 до 15000
+        </label>
         <span>Сетка:</span>
-        <span>Адаптивная</span>
-        <span>Фиксированная</span>
-        <span>Резиновая</span>
-        <span>ОСОБЕННОСТИ:</span>
-        <span>Слайдер</span>
-        <span>Блок преимуществ</span>      
-        <span>Новости</span>    
-        <span>Галерея</span>    
-        <span>Корзина</span>
-        <span>ПОКАЗАТЬ</span>  
-        <span>СОРТИРОВАТЬ:</span>
+        <label>
+          <input type="radio" name="radio">Адаптивная
+        </label>
+        <label>
+          <input type="radio" name="radio">Фиксированная
+        </label>
+        <label>
+          <input type="radio" name="radio">Резиновая
+        </label>
+        <p>ОСОБЕННОСТИ:</p>
+        <input type="checkbox" name="slider" id="filter-slider" checked>
+        <label for="filter-slider">Слайдер</label>
+        <input type="checkbox" name="advantage-block" id="filter-advantage-block" checked>
+        <label for="filter-advantage-block">Блок преимуществ</label>
+        <input type="checkbox" name="news" id="filter-news" checked>
+        <label for="filter-news">Новости</label>
+        <input type="checkbox" name="gallery" id="filter-gallery" checked>
+        <label for="filter-gallery">Галерея</label>   
+        <input type="checkbox" name="shopping-cart" id="filter-shopping-cart" checked>
+        <label for="filter-shopping-cart">Корзина</label> 
+        <button type="submit">ПОКАЗАТЬ</button> 
+      </form> 
+        <p>СОРТИРОВАТЬ:</p>
         <span>По цене</span>
         <span>По типу</span>
         <span>По названию</span>
-      </div>
       <section class="cards">
         <div class="card-sedona">
           <img src="img/img-sedona.jpg" width="360" height="576" alt="Седона">
-          <h2 class="page-title">Sedona</h2>
+          <a class="page-title" href="#">Sedona</a>
           <p>Информационный сайт для туристов</p>
-          <a class="button" href="#">9 900 руб</a>
+          <button>9 900 руб</button>
         </div>
         <div class="card-pinkapp">
           <img src="img/img-pink.jpg" width="360" height="576" alt="Пинк">
-          <h2 class="page-title">Pink App</h2>
+          <a class="page-title" href="#">Pink App</a>
           <p>Продуктовый лендинг приложения для iOS и Android</p>
-          <a class="button" href="#">9 900 руб</a>
+          <button>9 900 руб</button>
         </div>
         <div class="card-borodinski">
           <img src="img/img-barbershop.jpg" width="360" height="576" alt="Бородинский">
-          <h2 class="page-title">Barbershop</h2>
+          <a class="page-title" href="#">Barbershop</a>
           <p>Сайт салоны красоты.Для мужчин, да.</p>
-          <a class="button" href="#">9 900 руб</a>
+          <button>9 900 руб</button>
         </div>
         <div class="card-mishki">
           <img src="img/img-mishka.jpg" width="360" height="576"alt="Мишка">
-          <h2 class="page-title">MISHKA</h2>
+          <a class="page-title" href="#">MISHKA</a>
           <p>Интернет-магазин вязаных игрушек</p>
-          <a class="button" href="#">9 900 руб</a>
+          <button>9 900 руб</button>
         </div>
         <div class="card-aplus">
           <img src="img/img-aplus.jpg" width="360" height="576" alt="A plus">
-          <h2 class="page-title">A Plus</h2>
+          <a class="page-title" href="#">A Plus</a>
           <p>Лендинг курсов повышения квалификации</p>
-          <a class="button" href="#">9 900 руб</a>
+          <button>9 900 руб</button>
         </div>
         <div class="card-kvast">
           <img src="img/img-kvast.jpg" width="360" height="576" alt="КВАСТ">
-          <h2 class="page-title">КВАСТ</h2>
+          <a class="page-title" href="#">КВАСТ</a>
           <p>Промо-сайт производителя крафтового кваса</p>
-          <a class="button" href="#">9 900 руб</a>
+          <button>9 900 руб</button>
         </div>  
       </section>
       <div class="paginator">
-        <span>1</span>
-        <span>2</span>
-        <span>3</span>
-        <span>следующая</span>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">следующая</a>
       </div> 
     </main>
     <footer class="main-footer">
       <div class="footer-contacts">
         <img src="img/map.jpg" alt="Карта">
-        <h2>NЁRDS DESIGN STUDIO</h2>
+        <p>NЁRDS DESIGN STUDIO</p>
         <p>191186, Санкт-Петербург,<br>
            ул. Б.Конюшенная, д. 19/8</p>
         <p>тел. +7(812)275-75-75</p>
@@ -106,5 +120,23 @@
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>    
     </footer>
+    <section class="modal">
+        <h2>Напишите нам</h2>
+        <button class="modal-close" type="button">Закрыть</button>
+        <form class="info-form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="info-item">
+            <label for="info-name">Ваше имя:</label>
+            <input id="info-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+          </p>
+          <p class="info-item">
+            <label for="info-mail">Ваш e-mail:</label> 
+            <input id="info-mail" type="text" name="mail" value="" placeholder="email@example.com">
+          </p>
+          <p class="info-item">
+            <label for="info-letter">Текст письма:</label> 
+            <input id="info-letter" type="text" name="letter" value="" placeholder="В свободной форме">
+          </p>
+          <button class="button" type="submit">ОТПРАВИТЬ</button>
+        </form>
   </body>
 </html>
